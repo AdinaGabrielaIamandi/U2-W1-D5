@@ -56,6 +56,10 @@ nav img {
     cursor: pointer;
 }
 
+nav {
+    position: sticky;
+}
+
 
 /*heading*/
 
@@ -116,7 +120,8 @@ nav img {
 
 /*treading section*/
 
-section {
+section,
+#content {
     margin-left: 150px;
     margin-right: 150px;
 }
@@ -182,7 +187,7 @@ section {
 
 .date {
     font-size: 0.8em;
-    color: lightgray;
+    color: rgb(178, 178, 178);
     font-weight: bolder;
     display: flex;
     align-items: center;
@@ -190,6 +195,59 @@ section {
 
 .star {
     padding-left: 0.5em;
+}
+
+
+/*article*/
+
+#content {
+    padding-top: 3em;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.text {
+    font-size: 1em;
+    color: rgb(162, 162, 162);
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.date button {
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(241, 239, 239);
+    color: rgb(162, 162, 162);
+    padding: 0.2em 0.5em;
+    margin-left: 0.2em;
+}
+
+.down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    width: 780px;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3.5em;
+    line-height: 1.2;
+}
+
+article>div {
+    width: 60%;
+}
+
+article>img {
+    width: 30%;
+    height: 100%;
 }
 
 
