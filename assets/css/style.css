@@ -4,6 +4,9 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+
+/* nav bar*/
+
 header {
     background-color: #ffc017;
 }
@@ -52,6 +55,9 @@ nav img {
     font-size: 0.9em;
     cursor: pointer;
 }
+
+
+/*heading*/
 
 #title {
     display: flex;
@@ -107,8 +113,24 @@ nav img {
     }
 }
 
+
+/*treading section*/
+
 section {
     margin-left: 150px;
+    margin-right: 150px;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#cards>div {
+    padding-bottom: 1em;
+    display: flex;
+    width: 350px;
 }
 
 #trending {
@@ -117,6 +139,7 @@ section {
     padding-top: 2em;
     font-weight: bolder;
     font-size: 0.7em;
+    padding-bottom: 1em;
 }
 
 #trending img {
@@ -124,28 +147,49 @@ section {
 }
 
 .art {
-    padding-top: 0.5em;
     display: flex;
+    flex-direction: column;
 }
 
 .numb {
     float: left;
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: bolder;
     color: lightgray;
-    padding-right: 1em;
+    padding-right: 0.8em;
 }
 
 .writer img {
-    float: left;
+    /*float: left;*/
     border-radius: 50px;
     width: 20px;
+    margin-right: 0.7em;
 }
 
 .writer {
     font-size: 0.8em;
     display: flex;
     align-items: center;
+    padding-bottom: 0.7em;
+    font-weight: bolder;
+}
+
+.title-art {
+    font-size: 1em;
+    padding-bottom: 0.7em;
+    font-weight: bolder;
+}
+
+.date {
+    font-size: 0.8em;
+    color: lightgray;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    padding-left: 0.5em;
 }
 
 
