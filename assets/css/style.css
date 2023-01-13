@@ -9,15 +9,23 @@ body {
 
 header {
     background-color: #ffc017;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
 }
 
 header nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: 1px solid black;
     padding-top: 1.3em;
     padding-bottom: 1.3em;
+    padding-left: 150px;
+    padding-right: 150px;
 }
+
+
+/*cambiare colore alla navbar cercare scroll event */
 
 nav img {
     width: 180px;
@@ -56,14 +64,11 @@ nav img {
     cursor: pointer;
 }
 
-nav {
-    position: sticky;
-}
-
 
 /*heading*/
 
 #title {
+    background-color: #ffc017;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,6 +108,9 @@ nav {
     max-width: 35%;
     max-height: 100%;
 }
+
+
+/* overflow */
 
 
 /*@media screen and (min-width: 481px) and (max-width: 1024px) {
@@ -233,8 +241,8 @@ section,
 
 article {
     display: flex;
-    width: 780px;
-    height: 150px;
+    width: 90%;
+    height: 15%;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 3.5em;
@@ -247,7 +255,7 @@ article>div {
 
 article>img {
     width: 30%;
-    height: 100%;
+    height: 10%;
 }
 
 
