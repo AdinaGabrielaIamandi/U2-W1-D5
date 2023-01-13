@@ -10,22 +10,20 @@ header {
 
 header nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border-bottom: 1px solid black;
     padding-top: 1.3em;
     padding-bottom: 1.3em;
 }
 
 nav img {
-    margin-left: 12em;
-    width: 10%;
+    width: 180px;
 }
 
 #container-nav {
     display: flex;
     align-items: center;
     font-size: 1.1em;
-    margin-right: 12em;
 }
 
 #container-nav ul {
@@ -40,6 +38,12 @@ nav img {
     margin-right: 1.8em;
 }
 
+@media screen and (max-width: 768px) {
+    #container-nav ul .no {
+        display: none;
+    }
+}
+
 #container-nav button {
     background-color: black;
     color: white;
@@ -51,26 +55,97 @@ nav img {
 
 #title {
     display: flex;
-    margin-left: 14em;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
 }
 
 #title .text-left {
-    margin-top: 4em;
     font-size: 1.5em;
+    display: flex;
+    width: 550px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 7.2em;
 }
 
 #title .text-left h1 {
     font-family: "Spectral", serif;
-    font-weight: 700;
-    font-size: 2em;
+    letter-spacing: -0.06em;
+    font-size: 4.5em;
+    padding-bottom: 0.2em;
+}
+
+#title .text-left button {
+    background-color: black;
+    color: white;
+    padding: 0.4em 2.5em;
+    border-radius: 30px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 2em;
 }
 
 #title svg {
     margin-top: 0;
     margin-right: 0;
-    max-width: 45%;
-    min-width: 30%;
+    max-width: 35%;
+    max-height: 100%;
+}
+
+
+/*@media screen and (min-width: 481px) and (max-width: 1024px) {
+    #title svg {
+        transform: translate(70px);
+    }
+}*/
+
+@media screen and (max-width: 480px) {
+    #title svg {
+        display: none;
+    }
+}
+
+section {
+    margin-left: 150px;
+}
+
+#trending {
+    display: flex;
+    align-items: center;
+    padding-top: 2em;
+    font-weight: bolder;
+    font-size: 0.7em;
+}
+
+#trending img {
+    padding-right: 0.8em;
+}
+
+.art {
+    padding-top: 0.5em;
+    display: flex;
+}
+
+.numb {
+    float: left;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: lightgray;
+    padding-right: 1em;
+}
+
+.writer img {
+    float: left;
+    border-radius: 50px;
+    width: 20px;
+}
+
+.writer {
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
 }
 
 
