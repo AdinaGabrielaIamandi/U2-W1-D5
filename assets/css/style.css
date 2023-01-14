@@ -129,7 +129,7 @@ nav img {
 /*treading section*/
 
 section,
-#content {
+#article-aside {
     margin-left: 150px;
     margin-right: 150px;
 }
@@ -208,7 +208,7 @@ section,
 
 /*article*/
 
-#content {
+#article-aside {
     padding-top: 3em;
 }
 
@@ -241,8 +241,6 @@ section,
 
 article {
     display: flex;
-    width: 90%;
-    height: 15%;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 3.5em;
@@ -251,11 +249,61 @@ article {
 
 article>div {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 article>img {
     width: 30%;
-    height: 10%;
+}
+
+#article-aside {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    padding-left: 90px;
+}
+
+aside h2 {
+    font-size: 0.9em;
+    font-weight: bolder;
+    padding-bottom: 1em;
+}
+
+aside .buttons {
+    padding-bottom: 1em;
+    border-bottom: 1px solid lightgray;
+}
+
+.buttons button {
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 0.5em 1.5em;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(162, 162, 162);
+}
+
+.footer-aside {
+    padding-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-aside a {
+    font-size: 1em;
+    color: rgb(162, 162, 162);
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 
